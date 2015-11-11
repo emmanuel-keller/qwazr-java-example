@@ -1,0 +1,11 @@
+{
+  "controllers": {
+    "^/$": "src/main/java/com/qwazr/example/RootServlet.java"
+  },
+  "statics": {
+    "^/css/(.*)$": "src/static/css/$1"
+  },
+  "javac": {
+    "source_root": "src/main/java"
+  }
+}
