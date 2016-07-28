@@ -34,14 +34,11 @@
             <artifactId>qwazr-server</artifactId>
             <version>1.0.1-SNAPSHOT</version>
         </dependency>
-        <dependency>
-            <groupId>com.qwazr</groupId>
-            <artifactId>qwazr-library</artifactId>
-            <version>1.0.1-SNAPSHOT</version>
-        </dependency>
     </dependencies>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <qwazr.version>1.0.1-SNAPSHOT</qwazr.version>
     </properties>
     <build>
@@ -73,13 +70,6 @@
                         <param>*.json</param>
                     </etcFilters>
                 </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>com.qwazr</groupId>
-                        <artifactId>qwazr-library</artifactId>
-                        <version>1.0.1-SNAPSHOT</version>
-                    </dependency>
-                </dependencies>
             </plugin>
         </plugins>
     </build>

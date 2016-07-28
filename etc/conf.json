@@ -1,6 +1,6 @@
 {
   "controllers": {
-    "/": "com.qwazr.example.HomeServlet"
+    "": "com.qwazr.example.HomeServlet"
   },
   "statics": {
     "/css/*": "src/static/css"
