@@ -65,7 +65,6 @@
                         <param>webapps</param>
                         <param>scripts</param>
                         <param>schedulers</param>
-                        <param>compiler</param>
                     </services>
                     <groups>
                         <param>index</param>
