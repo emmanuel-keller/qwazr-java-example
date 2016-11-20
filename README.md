@@ -13,6 +13,9 @@ cd qwazr-java-example
 mvn compile qwazr:start
 ```
 
+
+docker run -v $(pwd):/var/lib/qwazr  -p 9090:9090 -p 9091:9091 qwazr/server
+
 ## What do you get:
 
 The web application is visible here:
