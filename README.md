@@ -1,5 +1,8 @@
-# qwazr-java-example
+# QWAZR Java Example
     
+This is a basic maven application for QWAZR.
+It includes a web controller and an HTML template.
+
 ## Getting started
 
 Download this example and start the simple Web application.
@@ -19,3 +22,7 @@ The web application is visible here:
 ## Where to go now ?
 
 Just browse the source code, we add some README.md files to guide you.
+
+- The [configuration](etc)
+- The [JAVA source code](src/main/java/com/qwazr/example)
+- The [HTML template](src/main/resources/com/qwazr/example)
