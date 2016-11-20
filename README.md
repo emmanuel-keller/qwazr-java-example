@@ -14,7 +14,7 @@ mvn compile qwazr:start
 
 The web application is visible here:
 
-http://localhost:9090
+[http://localhost:9090](http://localhost:9090)
     
 ## Where to go now ?
 
