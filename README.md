@@ -2,6 +2,8 @@
     
 ## Getting started
 
+Download this example and start the simple Web application.
+
 ```shell
 git clone https://github.com/qwazr/qwazr-java-example.git
 cd qwazr-java-example

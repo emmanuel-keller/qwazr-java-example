@@ -1,8 +1,0 @@
-{
-  "tools": [
-    {
-      "name": "freemarker",
-      "class": "com.qwazr.tools.FreeMarkerTool"
-    }
-  ]
-}
