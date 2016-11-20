@@ -28,7 +28,7 @@ This directory contains the configuration files.
 
 The controllers are defined this way:
 
-{route}:{serletClass}
+{route}:{servletClass}
 
 ### Statics
 
@@ -38,7 +38,7 @@ QWAZR can directly serves static files (css, js, etc...)
 
 ### Library
 
-Defines some optional singleton that can be injected into your code use the @Library annotation.
+Defines some optional singleton that can be injected into your code use the **@Library** annotation.
 
 ```java
 @Library("freemarker")
