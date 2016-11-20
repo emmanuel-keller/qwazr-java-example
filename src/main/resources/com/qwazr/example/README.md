@@ -1,0 +1,1 @@
+This directory contains the HTML template files. They are interpreted by Freemarker.

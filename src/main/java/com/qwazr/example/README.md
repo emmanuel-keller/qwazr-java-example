@@ -1,0 +1,2 @@
+- [HomeServlet](HomeServlet.java) is the servlet which controls the homepage,
+- [JobRunnable](JobRunnable.java) is the runnable task which is executed by the scheduler every 10 seconds.

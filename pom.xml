@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <name>QWAZR Quick-Start</name>
 
+    <!-- Uncomment this if you want to use the last snapshot version
     <pluginRepositories>
         <pluginRepository>
             <id>ossrh</id>
@@ -22,20 +23,22 @@
             <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
         </repository>
     </repositories>
+    -->
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <qwazr.version>1.0.1</qwazr.version>
+    </properties>
 
     <dependencies>
         <dependency>
             <groupId>com.qwazr</groupId>
             <artifactId>qwazr-server</artifactId>
-            <version>1.0.1-SNAPSHOT</version>
+            <version>${qwazr.version}</version>
         </dependency>
     </dependencies>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <qwazr.version>1.0.1-SNAPSHOT</qwazr.version>
-    </properties>
     <build>
         <plugins>
             <plugin>
@@ -57,15 +60,18 @@
                         <param>webapps</param>
                         <param>scripts</param>
                         <param>schedulers</param>
-                        <param>compiler</param>
                     </services>
-                    <groups>
-                        <param>index</param>
-                    </groups>
                     <etcFilters>
                         <param>*.json</param>
                     </etcFilters>
                 </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.qwazr</groupId>
+                        <artifactId>qwazr-server</artifactId>
+                        <version>${qwazr.version}</version>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
     </build>

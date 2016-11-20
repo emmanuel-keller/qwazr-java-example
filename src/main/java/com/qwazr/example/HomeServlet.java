@@ -19,7 +19,8 @@ public class HomeServlet extends HttpServlet {
 			throws ServletException, IOException {
 		try {
 			request.setAttribute("my_var", "Hello World! Java Servlet example.");
-			freemarker.template("src/views/index.ftl", request, response);
+			request.setAttribute("last_job_execution", JobRunnable.lastJobExecution);
+			freemarker.template("com/qwazr/example/index.ftl", request, response);
 		} catch (TemplateException e) {
 			throw new ServletException(e);
 		}

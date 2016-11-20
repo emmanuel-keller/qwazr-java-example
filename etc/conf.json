@@ -5,10 +5,17 @@
   "statics": {
     "/css/*": "src/static/css"
   },
-  "library": [
-    {
-      "name": "freemarker",
-      "class": "com.qwazr.tools.FreeMarkerTool"
+  "library": {
+    "freemarker": {
+      "class": "com.qwazr.tools.FreeMarkerTool",
+      "use_classloader": true
     }
-  ]
+  },
+  "schedulers": {
+    "my_job": {
+      "script_path": "com.qwazr.example.JobRunnable",
+      "cron": "*/10 * * * * ?",
+      "enabled": true
+    }
+  }
 }
