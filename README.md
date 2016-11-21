@@ -1,24 +1,29 @@
 # QWAZR Java Example
     
-This is a basic maven application for QWAZR.
+This is a basic Web application for QWAZR.
 It includes a web controller and an HTML template.
 
 ## Getting started
 
 Download this example and start the simple Web application.
 
-```shell
-git clone https://github.com/qwazr/qwazr-java-example.git
-cd qwazr-java-example
-mvn compile qwazr:start
-```
+Clone (download) the example :
 
+    git clone https://github.com/qwazr/qwazr-java-example.git
+    
+Move in the directory:
+    
+    cd qwazr-java-example
 
-docker run -v $(pwd):/var/lib/qwazr  -p 9090:9090 -p 9091:9091 qwazr/server
+Start the server using **Docker** :
 
-## What do you get:
+    docker run -v $(pwd):/var/lib/qwazr  -p 9090:9090 -p 9091:9091 qwazr/server
 
-The web application is visible here:
+Or start it using **Maven** :
+
+    mvn qwazr:start
+
+The web application is now visible here:
 
 [http://localhost:9090](http://localhost:9090)
     
