@@ -1,7 +1,6 @@
 # QWAZR Java Example
     
-This is a basic Web application for QWAZR.
-It includes a web controller and an HTML template.
+This is a basic MVC Web application for QWAZR.
 
 ## Getting started
 
