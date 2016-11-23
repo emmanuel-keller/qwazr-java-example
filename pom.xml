@@ -12,7 +12,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <qwazr.version>1.0.1</qwazr.version>
+        <qwazr.version>1.1-SNAPSHOT</qwazr.version>
     </properties>
 
     <dependencies>
@@ -45,6 +45,7 @@
                     <listenAddr>0.0.0.0</listenAddr>
                     <!-- Set which services are activated-->
                     <services>
+                        <param>compiler</param>
                         <param>webapps</param>
                         <param>scripts</param>
                         <param>schedulers</param>
@@ -65,4 +66,13 @@
 
         </plugins>
     </build>
+
+    <!-- Snapshot repository -->
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
 </project>
