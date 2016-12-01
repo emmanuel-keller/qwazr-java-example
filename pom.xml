@@ -67,19 +67,26 @@
         </plugins>
     </build>
 
-    <!-- Snapshot repository -->
-    <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-        </pluginRepository>
-    </pluginRepositories>
+    <!-- Enable Snapshots repository -->
+    <profiles>
+        <profile>
+            <id>allow-snapshot</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <repositories>
+                <repository>
+                    <id>snapshots-repo</id>
+                    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+                    <releases>
+                        <enabled>false</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
 
 </project>
